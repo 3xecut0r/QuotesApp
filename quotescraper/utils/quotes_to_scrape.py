@@ -1,4 +1,5 @@
 import json
+from bson.objectid import ObjectId
 
 from pymongo import MongoClient
 
@@ -14,8 +15,8 @@ for quote in quotes:
     author = db.authors.find_one({'fullname': quote['author'][0]})
     if author:
         db.quotes.insert_one({
-            'quote': quote['quote'],
             'tags': quote['tags'],
-            'author': author['fullname']
+            'author': ObjectId(author['_id']),
+            'quote': quote['quote']
         })
         print('Done')
