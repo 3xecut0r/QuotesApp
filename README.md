@@ -1,4 +1,4 @@
-# web10p2
+# QuotesApp
  
 ### Before starting you need: 
 
