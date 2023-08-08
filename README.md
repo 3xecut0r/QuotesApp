@@ -2,8 +2,8 @@
  
 ### Before starting you need: 
 
-- > git clone https://github.com/3xecut0r/web10p2.git
-- > cd web10p2
+- > git clone https://github.com/3xecut0r/QuotesApp.git
+- > cd QuotesApp
 - > You need to put authors.json into the mongoDB
 - > cd utils
 - > python3 quotes_to_scrape.py
